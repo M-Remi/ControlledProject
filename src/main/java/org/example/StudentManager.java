@@ -126,18 +126,11 @@ public class StudentManager {
 
         for (Student student : students) {
 
-            System.out.println(
-                    student.getName()
-                            + " | Avg: "
-                            + student.getAverageGrade()
-                            + " | Category: "
-                            + student.getGradeCategory()
-            );
+            System.out.println(student.getName());
+
         }
 
-        System.out.println("------------------------");
-        System.out.println("Total Students: " + getStudentCount());
-        System.out.println("Overall Average: " + getOverallAverage());
+
     }
 
     public void generateSampleData() {
@@ -161,13 +154,7 @@ public class StudentManager {
     }
 
     private void validateStudent(Student student) {
-        if (student == null) {
-            throw new IllegalArgumentException("Student cannot be null");
-        }
 
-        if (findStudentById(student.getId()).isPresent()) {
-            throw new IllegalArgumentException("Student ID already exists");
-        }
     }
 
     public static void main(String[] args) {
