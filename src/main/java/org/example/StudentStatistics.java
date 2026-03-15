@@ -15,11 +15,6 @@ public class StudentStatistics {
 
 
 
-    public void createOrder22(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
-    {
-        System.out.println("Testing");
-        System.out.println("Testing");
-    }
 
     public void updateUserProfile22(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
     {

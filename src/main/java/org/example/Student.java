@@ -14,16 +14,10 @@ public class Student {
         this.grades = new ArrayList<>();
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
     public void setName(String name) {
 
         this.name = name;
+        System.out.println("Test");
     }
     public void addGrade(int grade) {
         validateGrade(grade);
@@ -35,16 +29,7 @@ public class Student {
     public List<Integer> getGrades() {
         return new ArrayList<>(grades);
     }
-    public double getAverageGrade() {
-        if (grades.isEmpty()) {
-            return 0.0;
-        }
-        int total = 0;
-        for (int grade : grades) {
-            total += grade;
-        }
-        return (double) total / grades.size();
-    }
+
     public int getHighestGrade() {
         int max=0;
         return max;
@@ -57,9 +42,7 @@ public class Student {
 
         return min;
     }
-    public boolean hasPassed() {
-        return getAverageGrade() >= 50;
-    }
+
     public String getGradeCategory() {
 
         return "Fail or Pass";

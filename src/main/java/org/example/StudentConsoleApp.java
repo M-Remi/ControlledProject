@@ -10,18 +10,14 @@ public class StudentConsoleApp {
     public StudentConsoleApp() {
         manager = new StudentManager();
         statistics = new StudentStatistics(manager);
-        System.out.println("Hello world!");
-    }
-
-
-
-
-
-    public static void main(String[] args) {
-
-        StudentConsoleApp app = new StudentConsoleApp();
 
     }
+
+
+
+
+
+
     public void createOrder(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
     {
     }
