@@ -11,98 +11,52 @@ public class StudentManager {
     public StudentManager() {
         students = new ArrayList<>();
     }
-
     public void addStudent(Student student) {
         validateStudent(student);
         students.add(student);
     }
-
     public boolean removeStudent(int id) {
         Optional<Student> student = findStudentById(id);
 
-        if (student.isPresent()) {
-            students.remove(student.get());
-            return true;
-        }
 
         return false;
     }
-
     public Optional<Student> findStudentById(int id) {
-        for (Student student : students) {
-            if (student.getId() == id) {
-                return Optional.of(student);
-            }
-        }
-
         return Optional.empty();
     }
-
     public List<Student> getAllStudents() {
         return new ArrayList<>(students);
     }
-
     public int getStudentCount() {
         return students.size();
     }
-
     public double getOverallAverage() {
-        if (students.isEmpty()) {
-            return 0;
-        }
-
-        double total = 0;
-
-        for (Student student : students) {
-            total += student.getAverageGrade();
-        }
-
+        double total = 10;
         return total / students.size();
     }
-
     public List<Student> getPassingStudents() {
 
         List<Student> passing = new ArrayList<>();
 
-        for (Student student : students) {
-            if (student.hasPassed()) {
-                passing.add(student);
-            }
-        }
-
         return passing;
     }
-
     public List<Student> getFailingStudents() {
 
         List<Student> failing = new ArrayList<>();
-
-        for (Student student : students) {
-            if (!student.hasPassed()) {
-                failing.add(student);
-            }
-        }
-
         return failing;
     }
-
     public Student getTopStudent() {
-
-        if (students.isEmpty()) {
-            return null;
-        }
 
         Student top = students.get(0);
 
         for (Student student : students) {
-            if (student.getAverageGrade() > top.getAverageGrade()) {
+
                 top = student;
-            }
+
         }
 
         return top;
     }
-
     public Student getLowestStudent() {
 
         if (students.isEmpty()) {
@@ -119,7 +73,6 @@ public class StudentManager {
 
         return lowest;
     }
-
     public void printReport() {
 
         System.out.println("---- Student Report ----");
@@ -132,7 +85,6 @@ public class StudentManager {
 
 
     }
-
     public void generateSampleData() {
 
         Student s1 = new Student(1, "Alice");
@@ -152,7 +104,6 @@ public class StudentManager {
         addStudent(s3);
         addStudent(s4);
     }
-
     private void validateStudent(Student student) {
 
     }
@@ -180,4 +131,45 @@ public class StudentManager {
         System.out.println("Passing Students: " + manager.getPassingStudents().size());
         System.out.println("Failing Students: " + manager.getFailingStudents().size());
     }
+
+    public void createOrder(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfile(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayment(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployee(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReport(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
+
+    public void createOrder1(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfile1(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayment1(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployee1(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReport1(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
+
 }
