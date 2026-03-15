@@ -1,15 +1,12 @@
 package org.example;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
 
 public class StudentStatistics {
 
-    private final StudentManager manager;
+
 
     public StudentStatistics(StudentManager manager) {
 
-        this.manager = manager;
+
     }
 
 

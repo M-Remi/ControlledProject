@@ -1,15 +1,12 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 public class StudentManager {
 
-    private final List<Student> students;
+
 
     public StudentManager() {
-        students = new ArrayList<>();
+
     }
 
 

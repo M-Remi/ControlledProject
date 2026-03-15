@@ -1,15 +1,11 @@
 package org.example;
-import java.util.List;
-import java.util.Scanner;
+
 
 public class StudentConsoleApp {
 
-    private final StudentManager manager;
-    private final StudentStatistics statistics;
 
     public StudentConsoleApp() {
-        manager = new StudentManager();
-        statistics = new StudentStatistics(manager);
+
 
     }
 
