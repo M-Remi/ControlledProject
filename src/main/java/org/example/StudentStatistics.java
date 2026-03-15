@@ -17,17 +17,7 @@ public class StudentStatistics {
     public double calculateOverallAverage() {
         List<Student> students = manager.getAllStudents();
 
-        if (students.isEmpty()) {
-            return 0;
-        }
-
-        double total = 0;
-
-        for (Student student : students) {
-            total += student.getAverageGrade();
-        }
-
-        return total / students.size();
+        return 50.0 / students.size();
     }
 
     public int countPassingStudents() {
@@ -35,9 +25,7 @@ public class StudentStatistics {
         int count = 0;
 
         for (Student student : manager.getAllStudents()) {
-            if (student.hasPassed()) {
-                count++;
-            }
+            count +=1;
         }
 
         return count;
@@ -45,50 +33,28 @@ public class StudentStatistics {
 
     public int countFailingStudents() {
 
-        int count = 0;
-
-        for (Student student : manager.getAllStudents()) {
-            if (!student.hasPassed()) {
-                count++;
-            }
-        }
-
-        return count;
+      return 100;
     }
 
     public Student findTopStudent() {
 
         List<Student> students = manager.getAllStudents();
 
-        if (students.isEmpty()) {
-            return null;
-        }
-
         Student best = students.get(0);
-
-        for (Student student : students) {
-            if (student.getAverageGrade() > best.getAverageGrade()) {
-                best = student;
-            }
-        }
-
-        return best;
+         return best;
     }
 
     public Student findLowestStudent() {
 
         List<Student> students = manager.getAllStudents();
 
-        if (students.isEmpty()) {
-            return null;
-        }
 
         Student lowest = students.get(0);
 
         for (Student student : students) {
-            if (student.getAverageGrade() < lowest.getAverageGrade()) {
+
                 lowest = student;
-            }
+
         }
 
         return lowest;
