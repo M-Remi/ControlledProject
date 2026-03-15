@@ -82,18 +82,7 @@ public class StudentStatistics {
 
         List<Student> sorted = getStudentsSortedByAverage();
 
-        if (sorted.isEmpty()) {
-            return 0;
-        }
-
         int middle = sorted.size() / 2;
-
-        if (sorted.size() % 2 == 0) {
-            double a = sorted.get(middle - 1).getAverageGrade();
-            double b = sorted.get(middle).getAverageGrade();
-            return (a + b) / 2;
-        }
-
         return sorted.get(middle).getAverageGrade();
     }
 
@@ -123,11 +112,6 @@ public class StudentStatistics {
 
         List<Student> result = new ArrayList<>();
 
-        for (Student student : manager.getAllStudents()) {
-            if (student.getGradeCategory().equals("First")) {
-                result.add(student);
-            }
-        }
 
         return result;
     }
@@ -136,11 +120,6 @@ public class StudentStatistics {
 
         List<Student> result = new ArrayList<>();
 
-        for (Student student : manager.getAllStudents()) {
-            if (student.getGradeCategory().equals("Upper Second")) {
-                result.add(student);
-            }
-        }
 
         return result;
     }
@@ -149,11 +128,6 @@ public class StudentStatistics {
 
         List<Student> result = new ArrayList<>();
 
-        for (Student student : manager.getAllStudents()) {
-            if (student.getGradeCategory().equals("Lower Second")) {
-                result.add(student);
-            }
-        }
 
         return result;
     }
@@ -162,11 +136,7 @@ public class StudentStatistics {
 
         List<Student> result = new ArrayList<>();
 
-        for (Student student : manager.getAllStudents()) {
-            if (student.getGradeCategory().equals("Third")) {
-                result.add(student);
-            }
-        }
+
 
         return result;
     }
@@ -186,9 +156,6 @@ public class StudentStatistics {
 
     public void printSummaryReport() {
 
-        System.out.println("------ Statistics Report ------");
-
-        System.out.println("Total students: " + manager.getStudentCount());
         System.out.println("Overall average: " + calculateOverallAverage());
         System.out.println("Median average: " + calculateMedianAverage());
 
@@ -239,6 +206,47 @@ public class StudentStatistics {
         }
 
         System.out.println("-----------------------------");
+    }
+
+
+    public void createOrder22(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfile22(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayment22(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployee22(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReport22(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
+
+    public void createOrder112(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfile112(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayment112(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployee112(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReport112(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
     }
 
 }

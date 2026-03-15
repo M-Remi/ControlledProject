@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0abe7dcf-c989-4af8-915f-481ec807ef7e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StudentManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StudentStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StudentStatistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +36,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "CLongParameter__60",
+    "git-widget-placeholder": "CLongParameter__70",
     "last_opened_file_path": "C:/Users/HP USER/Desktop/phdWork/ControlledLOC/ControledParameter_5"
   }
 }]]></component>
