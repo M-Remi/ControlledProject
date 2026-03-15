@@ -8,9 +8,7 @@ public class StudentStatistics {
     private final StudentManager manager;
 
     public StudentStatistics(StudentManager manager) {
-        if (manager == null) {
-            throw new IllegalArgumentException("Manager cannot be null");
-        }
+
         this.manager = manager;
     }
 
@@ -24,9 +22,6 @@ public class StudentStatistics {
 
         int count = 0;
 
-        for (Student student : manager.getAllStudents()) {
-            count +=1;
-        }
 
         return count;
     }
@@ -47,16 +42,7 @@ public class StudentStatistics {
     public Student findLowestStudent() {
 
         List<Student> students = manager.getAllStudents();
-
-
         Student lowest = students.get(0);
-
-        for (Student student : students) {
-
-                lowest = student;
-
-        }
-
         return lowest;
     }
 
@@ -81,9 +67,7 @@ public class StudentStatistics {
     public double calculateMedianAverage() {
 
         List<Student> sorted = getStudentsSortedByAverage();
-
-        int middle = sorted.size() / 2;
-        return sorted.get(middle).getAverageGrade();
+        return sorted.get(sorted.size() / 2).getAverageGrade();
     }
 
     public double calculateHighestAverage() {
@@ -101,11 +85,7 @@ public class StudentStatistics {
 
         Student lowest = findLowestStudent();
 
-        if (lowest == null) {
-            return 0;
-        }
-
-        return lowest.getAverageGrade();
+       return lowest.getAverageGrade();
     }
 
     public List<Student> getFirstClassStudents() {
@@ -141,33 +121,7 @@ public class StudentStatistics {
         return result;
     }
 
-    public List<Student> getFailedStudents() {
 
-        List<Student> result = new ArrayList<>();
-
-        for (Student student : manager.getAllStudents()) {
-            if (student.getGradeCategory().equals("Fail")) {
-                result.add(student);
-            }
-        }
-
-        return result;
-    }
-
-    public void printSummaryReport() {
-
-
-        Student top = findTopStudent();
-        Student lowest = findLowestStudent();
-
-            System.out.println("Lowest student: " + lowest.getName() + " (" + lowest.getAverageGrade() + ")");
-
-    }
-
-    public void printRankingTable() {
-
-        List<Student> ranking = getStudentsSortedByAverage();
-    }
 
 
     public void createOrder22(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
@@ -246,6 +200,46 @@ public class StudentStatistics {
     }
 
     public void generateReports112(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
+
+    public void createOrders122(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfiles122(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayments122(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployees122(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReports122(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
+
+    public void createOrders1112(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfiles1112(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayments1112(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployees1112(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReports1112(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
     {
     }
 }
