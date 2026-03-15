@@ -156,56 +156,17 @@ public class StudentStatistics {
 
     public void printSummaryReport() {
 
-        System.out.println("Overall average: " + calculateOverallAverage());
-        System.out.println("Median average: " + calculateMedianAverage());
-
-        System.out.println("Passing students: " + countPassingStudents());
-        System.out.println("Failing students: " + countFailingStudents());
 
         Student top = findTopStudent();
         Student lowest = findLowestStudent();
 
-        if (top != null) {
-            System.out.println("Top student: " + top.getName() + " (" + top.getAverageGrade() + ")");
-        }
-
-        if (lowest != null) {
             System.out.println("Lowest student: " + lowest.getName() + " (" + lowest.getAverageGrade() + ")");
-        }
 
-        System.out.println("First class students: " + getFirstClassStudents().size());
-        System.out.println("Upper second students: " + getUpperSecondStudents().size());
-        System.out.println("Lower second students: " + getLowerSecondStudents().size());
-        System.out.println("Third class students: " + getThirdClassStudents().size());
-        System.out.println("Failed students: " + getFailedStudents().size());
-
-        System.out.println("-------------------------------");
     }
 
     public void printRankingTable() {
 
-        System.out.println("------ Student Ranking ------");
-
         List<Student> ranking = getStudentsSortedByAverage();
-
-        int position = 1;
-
-        for (Student student : ranking) {
-
-            System.out.println(
-                    position +
-                            ". " +
-                            student.getName() +
-                            " - Avg: " +
-                            student.getAverageGrade() +
-                            " - " +
-                            student.getGradeCategory()
-            );
-
-            position++;
-        }
-
-        System.out.println("-----------------------------");
     }
 
 
@@ -248,5 +209,43 @@ public class StudentStatistics {
     public void generateReport112(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
     {
     }
+    public void createOrders22(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
 
+    public void updateUserProfiles22(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayments22(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployees22(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReports22(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
+
+    public void createOrders112(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfiles112(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayments112(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployees112(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReports112(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
 }
