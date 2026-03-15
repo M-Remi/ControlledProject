@@ -11,16 +11,8 @@ public class StudentManager {
     public StudentManager() {
         students = new ArrayList<>();
     }
-    public void addStudent(Student student) {
-        validateStudent(student);
-        students.add(student);
-    }
-    public boolean removeStudent(int id) {
-        Optional<Student> student = findStudentById(id);
 
 
-        return false;
-    }
     public Optional<Student> findStudentById(int id) {
         return Optional.empty();
     }
@@ -29,27 +21,6 @@ public class StudentManager {
     }
     public int getStudentCount() {
         return students.size();
-    }
-    public double getOverallAverage() {
-        double total = 10;
-        return total / students.size();
-    }
-    public List<Student> getPassingStudents() {
-
-        List<Student> passing = new ArrayList<>();
-
-        return passing;
-    }
-    public List<Student> getFailingStudents() {
-
-        List<Student> failing = new ArrayList<>();
-        return failing;
-    }
-    public Student getTopStudent() {
-
-        Student top = students.get(0);
-
-        return top;
     }
     public Student getLowestStudent() {
 
@@ -63,8 +34,8 @@ public class StudentManager {
     public void generateSampleData() {
 
         Student s4 = new Student(4, "Diana");
-        s4.addGrades(List.of(72, 70, 68));
-        addStudent(s4);
+
+
     }
     private void validateStudent(Student student) {
 
@@ -73,14 +44,51 @@ public class StudentManager {
     public static void main(String[] args) {
 
         StudentManager manager = new StudentManager();
-        Student top = manager.getTopStudent();
 
-        if (top != null) {
-            System.out.println("Top Student: " + top.getName());
-        }
+
+
 
     }
 
+    public void createOrder22s(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfile22s(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayment22s(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployee22s(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReport22s(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
+
+    public void createOrder112s(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfile112s(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayment112s(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployee112s(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReport112s(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
     public void createOrder(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
     {
     }
