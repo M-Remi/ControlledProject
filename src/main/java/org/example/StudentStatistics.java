@@ -64,68 +64,9 @@ public class StudentStatistics {
         return students;
     }
 
-    public double calculateMedianAverage() {
-
-        List<Student> sorted = getStudentsSortedByAverage();
-        return sorted.get(sorted.size() / 2).getAverageGrade();
-    }
-
-    public double calculateHighestAverage() {
-
-        Student top = findTopStudent();
-
-        if (top == null) {
-            return 0;
-        }
-
-        return top.getAverageGrade();
-    }
-
-    public double calculateLowestAverage() {
-
-        Student lowest = findLowestStudent();
-
-       return lowest.getAverageGrade();
-    }
-
-    public List<Student> getFirstClassStudents() {
-
-        List<Student> result = new ArrayList<>();
-
-
-        return result;
-    }
-
-    public List<Student> getUpperSecondStudents() {
-
-        List<Student> result = new ArrayList<>();
-
-
-        return result;
-    }
-
-    public List<Student> getLowerSecondStudents() {
-
-        List<Student> result = new ArrayList<>();
-
-
-        return result;
-    }
-
-    public List<Student> getThirdClassStudents() {
-
-        List<Student> result = new ArrayList<>();
-
-
-
-        return result;
-    }
-
-
-
-
     public void createOrder22(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
     {
+        System.out.println("Testing");
     }
 
     public void updateUserProfile22(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
@@ -242,4 +183,45 @@ public class StudentStatistics {
     public void generateReports1112(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
     {
     }
+
+    public void createOrder22s(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfile22s(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayment22s(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployee22s(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReport22s(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
+
+    public void createOrder112s(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
+    {
+    }
+
+    public void updateUserProfile112s(String firstName,String lastName,String email,String phone,String address,String city,String postcode,String country,String username,String password, boolean isActive)
+    {
+    }
+
+    public void processPayment112s(String cardNumber,String cardHolderName,String expiryDate,String cvv,String billingAddress,String city,String postcode,String country,double amount,String currency,String transactionId,boolean saveCard)
+    {
+    }
+
+    public void registerEmployee112s(String firstName,String lastName,String dateOfBirth,String gender,String email,String phone,String address,String department,String jobTitle,double salary,String managerName,String employmentType,String startDate)
+    {
+    }
+
+    public void generateReport112s(String title,String author,String department,String startDate,String endDate,String reportType,boolean includeSummary,boolean includeCharts,boolean includeTables,String outputFormat,String filePath,String approvalStatus)
+    {
+    }
+
 }
