@@ -10,32 +10,17 @@ public class StudentConsoleApp {
     public StudentConsoleApp() {
         manager = new StudentManager();
         statistics = new StudentStatistics(manager);
+        System.out.println("Hello world!");
     }
 
-    public void start() {
-        manager.generateSampleData();
-
-    }
-
-    private void printMenu() {
-
-    }
-
-    private void handleUserInput() {
 
 
-    }
 
-    private void displayStudents() {
-
-
-        System.out.println("------------------");
-    }
 
     public static void main(String[] args) {
 
         StudentConsoleApp app = new StudentConsoleApp();
-        app.start();
+
     }
     public void createOrder(String customerName, String customerEmail, String customerPhone,String shippingAddress,String billingAddress,String productId, int quantity,double price,String paymentMethod, String currency)
     {
